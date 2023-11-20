@@ -1,14 +1,10 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "name": "ng-dygraphs",
-  "version": "0.4.0",
+  "name": "ng-dygraphs-16",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpx200/ng-dygraphs"
-  },
-  "author": {
-    "name": "Ivan Stepić",
-    "email": "stepicivan@gmail.com"
+    "url": "https://github.com/IvanChupin/ng-dygraphs"
   },
   "keywords": [
     "angular",
@@ -20,23 +16,31 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mpx200/ng-dygraphs/issues"
+    "url": "https://github.com/IvanChupin/ng-dygraphs/issues"
   },
   "dependencies": {
     "dygraphs": "^2.1.0"
   },
   "devDependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/platform-browser-dynamic": "^5.0.0",
-    "codelyzer": "^4.0.1",
-    "ng-packagr": "^1.6.0",
-    "rxjs": "^5.5.2",
-    "tslint": "~5.7.0",
-    "typescript": "~2.4.2",
-    "zone.js": "^0.8.14"
+    "@angular/common": "^16.2.12",
+    "@angular/compiler": "^16.2.12",
+    "@angular/core": "^16.2.12",
+    "@angular/platform-browser": "^16.2.12",
+    "@angular/platform-browser-dynamic": "^16.2.12",
+    "@angular-eslint/builder": "16.3.1",
+    "@angular-eslint/eslint-plugin": "16.3.1",
+    "@angular-eslint/eslint-plugin-template": "16.3.1",
+    "@angular-eslint/schematics": "16.3.1",
+    "@angular-eslint/template-parser": "16.3.1",
+    "eslint": "^8.51.0",
+    "eslint-plugin-import": "^2.29.0",
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^6.11.0",
+    "@typescript-eslint/parser": "6.11.0",
+    "ng-packagr": "16.2.3",
+    "rxjs": "^7.8.1",
+    "typescript": "~5.1.6",
+    "zone.js": "^0.13.3"
   },
   "engines": {
     "node": ">=6.9.0",
@@ -44,7 +48,7 @@
     "@angular/cli": ">=1.6.1"
   },
   "scripts": {
-    "lint": "tslint --project tsconfig.json",
+    "lint": "eslint --ext .ts 'src/**/*.ts'",
     "prebuild": "npm run lint",
     "build": "ng-packagr"
   },
@@ -52,5 +56,6 @@
     "lib": {
       "entryFile": "index.ts"
     }
-  }
+  },
+  "typings": "index.d.ts"
 }

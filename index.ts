@@ -14,7 +14,7 @@ import { NgDygraphsComponent } from './src/ng-dygraphs.component';
   ]
 })
 export class NgDygraphsModule {
-  public static forRoot(): ModuleWithProviders {
+  public static forRoot(): ModuleWithProviders<any> {
     return {
       ngModule: NgDygraphsModule
     };

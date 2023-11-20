@@ -2,5 +2,18 @@
   "include": [
     "index.ts",
     "src/**/*.ts"
-  ]
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "target": "es2015",
+    "lib": ["es2017", "dom"],
+    "module": "esnext",
+    "paths": {
+      "@angular/*": [
+        "node_modules/@angular/*"
+      ]
+    },
+    "moduleResolution": "node"
+  }
 }
